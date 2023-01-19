@@ -1,0 +1,290 @@
+#nav2{
+    color: brown;
+    text-decoration: none;
+}
+
+#nav{
+    height:0%;
+    width:100%;
+    border: 1px solid red;
+    /* display: flex;
+    position: fixed; */
+   
+
+}
+#nav>div{
+    height:80px;
+    width:99%;
+    border:5px solid rgb(8, 158, 200);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  background-color: rgb(245, 246, 247);
+  gap:-200px;
+  margin-top: 39px;
+
+ 
+
+   position: fixed; 
+
+}
+
+#nav>div>img{
+    height:80px;
+    width:80px;
+    border: 1px solid rgb(4, 195, 125);
+    /* margin-left: 4%; */
+  
+
+}
+.navicon>img{
+    height:40%;
+    width:40px;
+    border: 1px solid red;
+    margin: auto;
+   
+}
+
+*{
+margin: 0px;
+padding: 0%;
+}
+#man{
+width:630px;
+height: 50px;
+border:1px solid black;
+padding: 8px;
+border-radius: 2px;
+
+
+}
+input{
+background: transparent;
+height: 50px;
+border: 0px;
+outline: 0px;
+width: 600px;
+
+}
+.icon-search{
+color: black;
+}
+/* ---------------------- 2nd nav bar------------------------------------------------------------------ */
+.dropbtn{
+    background-color: aliceblue;
+    color: black;
+    border: none;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.cont{
+    display: none;
+    position: absolute;
+    background-color: antiquewhite;
+    min-width: 160px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1; 
+}
+.cont a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.cont a:hover{background-color: beige;}
+ .dropdown:hover .cont{display: block;} 
+ .dropdown:hover .dropbtn{background-color: white;}
+
+
+ /* ----------------------------------------------------------------------------- */
+
+
+#parent2{
+height:60px;
+
+width:79%;
+border: 1px solid red;
+display: flex;
+justify-content: space-around;
+
+align-items: center;
+margin-top: 128px;
+
+padding-left: 10%;
+padding-right: 10%;
+position: fixed; 
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+background-color: aliceblue;
+
+
+
+
+}
+#nav1{
+border: 1px solid rgb(21, 155, 213);
+padding:15px;
+color: black;
+text-decoration: none;
+
+
+
+}
+/* ------------------------------------ */
+#img1{
+border: 2px solid blue;
+margin-top: 130px;
+width:99.8%;
+}
+
+#parent3 img{
+border: 1px solid rgb(231, 11, 88);
+height:300px;
+width:370px;
+margin-top: 30px;
+
+}
+#img2{
+height: 200px;
+width: 100%;
+}
+#parent4>img{
+border: 1px solid rgb(177, 6, 143);
+height:300px;
+width:379px;
+margin-top: -10px;
+margin-right: -10px;
+/* margin: auto; */
+}
+#img3{
+height: 50px;
+width: 100%;
+}
+#parent5>img{
+border: 1px solid rgb(21, 155, 213);
+height:350px;
+width:100%;
+/* margin-top: 30px; */
+}
+#parent5>div>img{
+border: 1px solid rgb(21, 155, 213);
+height:100px;
+width:100%;
+/* margin-top: 30px; */
+}
+#parent6>img{
+border: 1px solid rgb(77, 3, 105);
+height:300px;
+width:49.7613%;
+justify-content: space-between;
+margin-top: -3.29px;
+/* margin-top: 30px; */
+}
+#parent6>div>img{
+border: 1px solid rgb(77, 3, 105);
+height:700px;
+width:33.5%;
+justify-content: space-between; 
+/* margin-top: 30px; */
+margin-right: -10px;
+margin-top: 20px;
+}
+#parent7>img{
+border: 1px solid rgb(19, 235, 145);
+height: 20%;
+width: 20%;
+
+}
+
+#parent7>div>img{
+border: 1px solid rgb(19, 235, 145);
+height: 50%;
+width: 100%;
+
+}
+
+#parent8>img{
+border: 1px solid rgb(34, 8, 203);
+height: 50%;
+width:49.7613%;
+
+}
+#parent9>img{
+height: 20%;
+width: 16.4%;
+
+}
+#parent10{
+border: 1px solid blue;
+display:flex;
+/* height:30%;
+width: 50%; */
+}
+#parent10>img{
+height:30%;
+width: 50%;
+display: flex;
+
+}
+#parent10>div>img{
+border: 1px solid palevioletred;
+height:100%;
+width: 120%;
+display: flex;
+
+}
+#parent11>img{
+border: 2px solid red;
+height:auto;
+width:100%;
+}
+#parent11>div>img{
+border: 2px solid red;
+height:auto;
+width:24.5%;
+}
+/* ----------------------------------------blink---------------------------------------------------- */
+h1{
+/* position: absolute; */
+text-transform: translate(-50%);
+animation: blink 3s linear infinite;
+text-align: center;
+margin-top: 10px;
+font-size: 20px;
+
+}
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;};
+100%{opacity:1 ;};
+
+}
+#head{
+    height: 40px;
+    width:100%;
+    /* text-align: center; */
+    background-color: black;
+    color: white;
+    font-weight: 100;
+    position: fixed;
+    justify-content: center;
+}
+/* ----------------------------Account--------------------------------------- */
+#navicon1{
+    display: flex;
+}
+#img6{
+    border: 1px solid blue;
+    height: 40px;
+    width: 40px;
+}
+#btn{
+    border: none;
+   
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+/* ----------------------------------------------------------------------------------------------------------- */
