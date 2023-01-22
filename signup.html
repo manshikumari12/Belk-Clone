@@ -8,17 +8,623 @@
 </head>
 <body>
 </div>
+<style>
+    h1{
+        /* position: absolute; */
+        text-transform: translate(-50%);
+        animation: blink 3s linear infinite;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 20px;
+        
+        }
+        @keyframes blink{
+        0%{opacity: 0;}
+        50%{opacity: .5;};
+        100%{opacity:1 ;};
+        
+        }
+        #head{
+            height: 40px;
+            width:100%;
+            /* text-align: center; */
+            background-color: black;
+            color: white;
+            font-weight: 100;
+            position: fixed;
+            justify-content: center;
+        }
+
+        /* -----------------------------------------------------------nav------------------------------ */
+        #nav2{
+    color: brown;
+    text-decoration: none;
+}
+
+#nav{
+    height:0%;
+    width:100%;
+    /* border: 1px solid red; */
+    /* display: flex;
+    position: fixed; */
+   
+
+}
+#nav>div{
+    height:80px;
+    width:99%;
+    /* border:5px solid rgb(8, 158, 200); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  background-color: rgb(245, 246, 247);
+  gap:-200px;
+  margin-top: 39px;
+
+ 
+
+   position: fixed; 
+
+}
+
+#nav>div>img{
+    height:80px;
+    width:80px;
+    /* border: 1px solid rgb(4, 195, 125); */
+    /* margin-left: 4%; */
+  
+
+}
+.navicon>img{
+    height:40%;
+    width:40px;
+    /* border: 1px solid red; */
+    margin: auto;
+   
+}
+#navicon1{
+    display: flex;
+}
+#img6{
+    /* border: 1px solid blue; */
+    height: 40px;
+    width: 40px;
+}
+#btn{
+    border: none;
+   
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+
+*{
+margin: 0px;
+padding: 0%;
+}
+#man{
+width:630px;
+height: 50px;
+border:1px solid black;
+padding: 8px;
+border-radius: 2px;
+
+
+}
+input{
+background: transparent;
+height: 50px;
+border: 0px;
+outline: 0px;
+width: 600px;
+
+}
+.icon-search{
+color: black;
+}
+ .dropbtn{
+    background-color: aliceblue;
+    color: black;
+    border: none;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.cont{
+    display: none;
+    position: absolute;
+    background-color: antiquewhite;
+    min-width: 160px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1;
+}
+.cont a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.cont a:hover{background-color: beige;}
+ .dropdown:hover .cont{display: block;} 
+ .dropdown:hover .dropbtn{background-color: white;} 
+
+ 
+#parent2{
+    height:60px;
+    
+    width:80%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    
+    align-items: center;
+    margin-top: 119px;
+    
+    padding-left: 10%;
+    padding-right: 10%;
+    position: fixed; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: aliceblue;
+    
+    
+    }
+    #signup{
+      /* border: 1px solid blueviolet; */
+      margin-top:0%;
+   
+    }
+    #signup>form{
+      width: 50%;
+      height: 120%;
+      border: 1px solid blueviolet;
+      margin-top:10%;
+      padding-left:30px;
+      /* background-color: rgb(216, 242, 242); */
+      margin-left: 30%;
+      padding-bottom: 30px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    
+    }
+
+    #head3{
+      width:50%;
+      margin-top:50px;
+      border: 1 px solid red;
+      margin-left: 00px;
+      /* text-align: center; */
+      background-color: blue;
+    }
+#nam{
+
+  width:610px;
+height: 50px; 
+/* border:2px solid rgb(6, 98, 196); */
+border: 2px solid blueviolet;
+padding: 8px;
+border-radius: 2px;
+margin-top: 2%;
+border-radius: 3px;
+
+
+}
+#mail{
+  /* border:2px solid rgb(6, 98, 196); */
+  width:630px;
+height: 50px;
+border: 1px solid rgb(120, 118, 122);
+border-radius: 2px;
+margin-top: 2%;
+border-radius: 3px; 
+}
+#pass{
+  /* border:2px solid rgb(6, 98, 196); */
+  width:630px;
+height: 50px;
+border: 1px solid rgb(117, 116, 118);
+ border-radius: 2px;
+margin-top: 2%;
+border-radius: 3px; 
+}
+#sub{
+
+  border: 1px solid rgb(96, 94, 97);
+   border-radius: 2px;
+margin-top: 2%;
+border-radius: 3px; 
+width:650px;
+    height: 50px;
+    background-color: rgb(2, 96, 190);
+    border: none;
+    margin-top: 2%;
+    border-radius: 3px;
+     font-size: 20px;
+    color:white
+}
+#submit{
+  border: 1px solid rgb(117, 15, 168);
+  color:white
+}
+p{
+  margin-left: 40px;
+  font: optional;
+}
+#log{
+  color:blue;
+}
+/* ---------------------------------------footer------------- */
+#parentfoot{
+  margin-top: 40px;
+  border: 1px solid rgb(7, 192, 109);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgb(241, 243, 242);
+}
+a{
+  color: rgb(21, 21, 21);
+  font-size: larger;
+  font-weight: 200px;
+}
+h4{
+  font-weight: 200px;
+}
+h5{
+  font-weight: 200px;
+}
+
+#footerac>div{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+#footerbc>div{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 30px;
+
+}
+#footerdc>div{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+}
+#footerec>div{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 30px;
+
+}
+#footerfc>div{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+}
+#fashion{
+  color: gray;
+}
+
+
+    
+</style>
+<div id="head">
+
+  <!-- <p id="para"></p> -->
+  <h1>FREE shipping @ $49</h1>
+  <!-- <h1>Online & In-Store up to 40% off select Brands <hr>Get coupons <hr></h1> -->
+
+
+</div>
+
+
+
+<div id="nav">
+  <div  >
+      <img src="./f2.png" alt="">
+      <div id="man">
+          <input type="text" placeholder="Search">
+        
+           <a href="#">  <i class="fa fa-search icon-search" ></i></a> 
+          
+          
+          
+      </div>
+
+      <div class="line"></div>
+
+      <div class="navicon">
+          <img src="./add.png" alt="">
+          <p>F reward</p>
+
+      </div>
+
+      <div class="navicon">
+          <img src="./cutting-out-dollar-symbol.png" alt="">
+          <p>Coupon</p>
+
+      </div>
+
+      <div class="navicon1">
+          <img  id="img6"src="./user.png" alt="">
+          <a href="./login.html"> <button id="btn">Account</button></a>  
+
+      </div>
+
+      <div class="line"></div>
+
+      <div class="navicon">
+          <img src="./shopping-bag.png" alt="">
+          <p>Bag</p>
+
+      </div>
+
+      
+  </div>
+
+ 
+
+
+
+
+</div>
+<div id="parent2">
+
+  <div class="dropdown">
+      <button class="dropbtn">Gift</button>
+      <div class="cont">
+    <a href="A">Beauty gift</a>
+    <a href="B">Cozy Shop</a>
+    <a href="C">Fine jewwlry</a>
+    <a href="D">Gift for him</a>
+    <a href="E">Gift for her</a>
+
+      </div>
+
+  </div>
+
+  <div class="dropdown">
+      <button class="dropbtn">Men</button>
+      <div class="cont">
+    <a href="A">New Arrivals</a>
+    <a href="B">Active Shop</a>
+    <a href="C">Designer</a>
+    <a href="D">Polos</a>
+    <a href="E">Hoodies</a>
+    <a href="F">Shirt</a>
+    <a href="G">Boots</a>
+    <a href="H">Sneakers</a>
+    <a href="I">Hats</a>
+    <a href="J">Wallets</a>
+
+      </div>
+
+  </div>
+
+  <div class="dropdown">
+      <button class="dropbtn">Women</button>
+      <div class="cont">
+    <a href="A">New Arrivals</a>
+    <a href="B">Active Shop</a>
+    <a href="C">Designer</a>
+    <a href="D">Dresses</a>
+    <a href="E">Pants</a>
+    <a href="F">Tops</a>
+    <a href="G">Jeans</a>
+    <a href="H">Suits</a>
+    <a href="I">Formal</a>
+    <a href="J">ActiveWear</a>
+
+      </div>
+
+  </div>
+
+  <div class="dropdown">
+      <button class="dropbtn">Kids</button>
+      <div class="cont">
+    <a href="A">New Arrivals</a>
+    <a href="B">Baby Essentials</a>
+    <a href="C">One-Pieces</a>
+    <a href="D">Boy's(8-20)</a>
+    <a href="E">Girl's(7-16)</a>
+    <a href="F">Baby</a>
+    <a href="G">Toys&Games</a>
+    <a href="H">Kid's Shop</a>
+    <a href="I">DressWear</a>
+    <a href="J">Pajamas</a>
+
+      </div>
+
+  </div>
+  
+
+  <div class="dropdown">
+      <button class="dropbtn">Beauty</button>
+      <div class="cont">
+    <a href="A">New Arrivals</a>
+    <a href="B">Eye Makeup</a>
+    <a href="C">Face Makeup</a>
+    <a href="D">Masks</a>
+    <a href="E">MAC</a>
+    <a href="F">Rollers</a>
+    <a href="G">Shaving</a>
+    <a href="H">Skin Care</a>
+    <a href="I">Mositurizers</a>
+    <a href="J">Palettes&Sets</a>
+
+      </div>
+
+  </div>
+
+  <div class="dropdown">
+      <button class="dropbtn">Jewlery</button>
+      <div class="cont">
+    <a href="A">New Arrivals</a>
+    <a href="B">Necklaces</a>
+    <a href="C">Rings</a>
+    <a href="D">Diamond Guide</a>
+    <a href="E">Birthstones</a>
+    <a href="F">Luxury Watch</a>
+    <a href="G">Bracelets</a>
+    <a href="H">Bridal set</a>
+    <a href="I">Engagement</a>
+    <a href="J">Weeding Band</a>
+
+      </div>
+
+  </div>
+
+
+  <div class="dropdown">
+      <button class="dropbtn">Home</button>
+      <div class="cont">
+    <a href="A">New Arrivals</a>
+    <a href="B">ChriStmas</a>
+    <a href="C">Electronics</a>
+    <a href="D">Health&Wellness</a>
+    <a href="E">Organization&Cleaning</a>
+    <a href="F">Rugs</a>
+    <a href="G">Windows</a>
+    <a href="H">Teatment</a>
+    <a href="I">Dinnerware</a>
+    <a href="J">Living Room</a>
+
+      </div>
+
+  </div>
+
+  <div class="dropdown">
+      <button class="dropbtn">Brand</button>
+      <div class="cont">
+    <a href="A">Active Brands</a>
+    <a href="B">F Exclusive</a>
+    <a href="C">Biltmore</a>
+    <a href="D">Crown&lvy</a>
+    <a href="E">Clinique</a>
+    <a href="F">Columbia</a>
+    <a href="G">COACH</a>
+    <a href="H">Free People</a>
+    <a href="I">IZOD</a>
+    <a href="J">Levi's</a>
+
+      </div>
+
+  </div>
+
+  <a  id="nav2"href="l">clearance</a>
+ 
+
+  <div id =child2>
+      <a id="nav1"href="j">FindAStore</a>
+  </div>
+
+
+</div> 
+<!-- ==================================signup================================================= -->
+
 <div id="signup">
-  <h1>Please Enter Your Details</h1><a href="./login.html"> signin</a> 
+  <a href="./login.html"> signin</a> 
   <form>
-    <input type="text" id="name" placeholder="name">
-    <input type="email" id="email" placeholder="email">
-    <input type="password"  id="password" placeholder="password">
-    <input type="submit" value="Submit" />
+    <h1 id="head3">Please Enter Your Details</h1>
+    <div id ="center">
+      <div id="nam">
+        <input type="text" id="name" placeholder="name">
+  
+      </div>
+      <div id="mail">
+        <input type="email" id="email" placeholder="email">
+      </div>
+    
+      <div id="pass">
+        <input type="password"  id="password" placeholder="password">
+      </div>
+    <div id =sub>
+      <input type="submit" value="Submit" />
+  
+    </div>
+    <p>Have an Account   <a  id="log"href="./login.html">login</a> </p>
+
+    </div>
+    
+   
+ 
     <!-- <a href="">creat account</a> -->
    
   </form>
 </div>
+<!-- ============================================footer============================= -->
+
+<div id="parentfoot">
+
+  <div id="footerac">
+    <hr>
+  
+    <div >
+      <h4>Shipping Rate</h4>
+      <h4>Easy Returns</h4>
+      <h4>FAQ"S</h4>
+      <h4>costumer Services</h4>
+    </div>
+  </div>
+     <b style="font-size: larger;"><hr></b>
+  
+     <div id="footerbc">
+      <div>
+        <a href="a">Costumer service 1-866-235-5467</a>
+        <h5>Mon-Fri 8:30AM - 8:30PM(EST)</h5>
+        <h5>Saturday 9:00AM - 7:00PM EST</h5>
+        <h5>Sunday 9:00 AM - 6:00 PM EST</h5>
+      </div>
+     </div>
+     
+  
+  
+     <div  id="footerdc">
+      <div>
+        <a href="a">Terms of use</a>
+        <a href="b">Privacy Policy</a>
+        <a href="c">Enable Accessiblity</a>
+        <a href="d">Accessiblity Statment</a>
+        <a href="e">Do Not Sell My Info (CA Customer Only)</a>
+      </div>
+  
+     </div>
+  
+  
+  
+     <div  id="footerec">
+      <div>
+        <a href="a">CA Transparency</a>
+        <a href="b">Sit Map Feedback</a>
+     
+      </div>
+  
+      <div  id="footerfc">
+        <div>
+          <a href="a" id="fashion">@ 2023 fashion , Inc & fashion e commerce LLC All Rights Rserved</a>
+         
+       
+        </div>
+  
+     </div>
+
+</div>
+
+
    
  
     

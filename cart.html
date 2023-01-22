@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+             .nav{
+        border: 2px solid red;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        
+      }
+      /* #filter{
+        display: block;
+        margin: auto;
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+
+      } */
+      #cont{
+
+        margin-top: 60px;
+        border: 2px solid saddlebrown;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        gap:20px;
+        justify-content: center;
+
+      }
+      #cont>div{
+        /* border: 2px solid  salmon; */
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 10px;
+
+        
+      }
+      #cont>div>img{
+        height:200px;
+        /* border: 2px solid saddlebrown; */
+        width:150px;
+
+
+      }
+     #cont>div>button{
+       display: block;
+       margin: auto;
+       background-color: rgb(47, 23, 205);
+       margin-top: 2px;
+       color: antiquewhite;
+       padding: 5px;
+       border: none;
+       border-radius: 3px;
+
+      }
+    
+
+    </style>
+</head>
+<body>
+    <div id="cont">
+
+    </div>
+    
+</body>
+</html>
+<script>
+    let div = document.getElementById("product-container");
+    let cont= document.getElementById("cont");
+    let LsData = JSON.parse(localStorage.getItem("cart"))||[]
+
+    display(LsData)
+
+function display(data){
+cont.innerHTML = ""
+    data.forEach((ele,ind)=>{
+
+        let card = document.createElement("div");
+        let img = document.createElement("img");
+         let name = document.createElement("h3");      
+        let dscr = document.createElement("p");
+        let price = document.createElement("p");
+        // let rating = document.createElement("p");
+        let btn = document.createElement("button");
+
+
+        img.src = ele.image;
+     name.innerText = ele.name;
+        dscr.innerText = ele.description;
+         price.innerText = ele.price;
+        // rating.innerText =  ele.rating;
+        btn.innerText = "remove"
+        
+        btn.addEventListener("click",()=>{
+           LsData = LsData.filter((el ,i)=>{
+             if(ele===el){
+                return false
+             }
+                return  true
+             
+           })
+           localStorage.setItem("cart",JSON.stringify(LsData))
+           display(LsData)
+           
+            })
+
+
+
+        card.append(img,name,dscr,price,btn)
+        cont.append(card)
+    })
+}
+</script>
