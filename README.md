@@ -1,4 +1,4 @@
-# optimal-need-5050
+# Belk-Clone
 # optimal-need-5050 is clone of belk.com
 # About = An extensive online retail platform offering diverse products such as clothing, accessories, home goods, and beauty products.
 
